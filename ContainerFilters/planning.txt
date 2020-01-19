@@ -1,0 +1,21 @@
+﻿this file contains the plan for container filters' implimentation.
+
+	DOES NOTHING MORE THAN ADD CONTRAINTS TO THE CONTAINER BLOCK VIA A FILTER A LA SORTERS !! NO ACTIVE PULLING/PUSHING (probs coming
+		in a block soon tm)
+
+---create list of all inventory items to be used by the filter UI---
+
+	I can probably do this the same way that keen/Meridius is doing it, need to get familiar with that code. oof.
+	I'll populate a list of names, and that's what gets displayed in the filter list. pretty self-explanitory, but I
+	needed this here to help remember. I did this while running on fumes...
+
+---create presets to use in filter UI - Ores, Ingots, Components, character tools and weapons, ammo, etc...---
+	
+	same as above. I think keen already has some sort of nomenclature for this... ?
+
+add inventory filter UI elements to block terminal (k menu) - this is done in UpdateBeforeSimulation, along with associated actions
+ 
+ - add blacklist/whitelist functionality (whitelist all by default)
+		- this could be difficult to impiment. gonna stick with whitelist only for now...
+ - add preset filter options
+ - add refresh button that updates inventory constriaints...
